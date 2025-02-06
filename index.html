@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>To Do List 🤍✨</h1>
+    </header>
+
+    <div class="form-container">
+        <form id="form">
+            <input type="text" id="inserir" placeholder="Inserir tarefa" required>
+            <input type="date" id="dateInicio" placeholder="Inserir data de inicio" required>
+            <select name="dia-semana" id="diaSemana" required>
+                <option value="Segunda-Feira">Segunda-Feira</option>
+                <option value="Terça-Feira">Terça-Feira</option>
+                <option value="Quarta-Feira">Quarta-Feira</option>
+                <option value="Quinta-Feira">Quinta-Feira</option>
+                <option value="Sexta-Feira">Sexta-Feira</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+            <input type="date" id="dateFim" placeholder="Inserir data de fim" required>
+            <input type="time" id="horario" placeholder="Inserir hora" required>
+            <select name="prioridade" id="prioridade" required>
+                <option value="urgente">Baixo</option>
+                <option value="baixo">Médio</option>
+                <option value="urgente">Urgente</option>
+            </select>
+        </form>
+        <button onclick="criarTarefa()">Adicionar</button>
+    </div>
+
+    <div class="lista-container">
+        <span id="mensagem"></span>
+        <button o></button>
+    </div>
+
+</body>
+
+</html>

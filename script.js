@@ -3,14 +3,26 @@ function criarTarefa() {
     let dateInicio = document.getElementById("dateInicio").value;
     let diaSemana = document.getElementById("diaSemana").value;
     let dateFim = document.getElementById("dateFim").value;
-    let horario = document.getElementById("horario").value;
     let prioridade = document.getElementById("prioridade").value;
 
-    let mensagem = "Tarefa: " + inserir + "\n" + "Data de Início: " + dateInicio + "\n" + "Dia da Semana: " + diaSemana + "\n" + "Data de Fim: " + dateFim + "\n" + "Horário: " + horario + "\n" + "Prioridade: " + prioridade;
+    let mensagem = "Tarefa: " + inserir + "|" + "Data de Início: " + dateInicio + "|" + "Dia da Semana: " + diaSemana + "|" + "Data de Fim: " + dateFim + "|" + "Prioridade: " + prioridade;
 
-    if (inserir == "" || dateInicio == "" || diaSemana == "" || dateFim == "" || horario == "" || prioridade == "") {
-        mensagem = "Preencha todos os campos!";
-    }
+    let novaTarefa = document.createElement("div");
+    novaTarefa.className = "novaTarefa";
+    novaTarefa.innerText = mensagem;
 
-    document.getElementById("mensagem").innerText = mensagem;
+    document.getElementById("tarefas").appendChild(novaTarefa);
+
+    let remover = document.createElement("button");
+    remover.className = "remover";
+    remover.innerText = "Remover";
+    remover.onclick = function () {
+        removerTarefa(novaTarefa);
+    };
+
+    novaTarefa.appendChild(remover);
+}
+
+function removerTarefa(tarefa) {
+    tarefa.remove();
 }

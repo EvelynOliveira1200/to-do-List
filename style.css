@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffebe5;
+}
+
+header img{
+    padding: 0.2rem;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h1, h5 {
+    color: #fffffff1;
+    margin: 1rem;
+}
+
+form {
+    width: 60vh;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid  #b49794;
+    background-color: #d7bfbd;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 97%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #ffffff;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.inicio-fim {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    width: 97%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #ffffff;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+select {
+    width: 40%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #ffffff;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.tarefa-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid  #b49794;
+    background-color: #d7bfbd;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30vh;
+    height: 2.2rem;
+}
+

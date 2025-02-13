@@ -5,7 +5,8 @@ function criarTarefa() {
     let dateFim = document.getElementById("dateFim").value;
     let prioridade = document.getElementById("prioridade").value;
 
-    let mensagem = "Tarefa: " + inserir + "|" + "Data de Início: " + dateInicio + "|" + "Dia da Semana: " + diaSemana + "|" + "Data de Fim: " + dateFim + "|" + "Prioridade: " + prioridade;
+    let mensagem = "Tarefa: " + inserir + " | " + "Data de Início:  " + dateInicio + " | " + "Dia da Semana: " + diaSemana + " | " + "Data de Fim: " + dateFim + " | " + "Prioridade: " + prioridade;
+    mensagem.className = "mensagem";
 
     let novaTarefa = document.createElement("div");
     novaTarefa.className = "novaTarefa";

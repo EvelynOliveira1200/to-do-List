@@ -30,11 +30,11 @@ h1, h5 {
 }
 
 form {
-    width: 60vh;
+    width: 90vh;
     padding: 1rem;
     margin: 1rem;
     border: 1px solid  #b49794;
-    background-color: #d7bfbd;
+    background-color: #dcbbb6;
     display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
@@ -81,14 +81,40 @@ select {
     
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+
+}
+
 button {
     padding: 0.5rem;
     margin: 0.5rem;
     border: 1px solid  #b49794;
-    background-color: #d7bfbd;
+    background-color: #ffe2df;
     border-radius: 5px;
     cursor: pointer;
-    width: 30vh;
+    width: 40vh;
     height: 2.2rem;
 }
+
+.novaTarefa {
+    justify-content: space-between;
+    background-color: #ddbcb8c7;
+    height: 15vh;
+    width: 90vh;
+    display: flex;
+    align-items: center;
+    text-emphasis: none;
+    text-align: justify;
+    border-radius: 0.5rem ;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.remover {
+    height: 2.2rem;
+    width: 40vh;
+}
+
 
